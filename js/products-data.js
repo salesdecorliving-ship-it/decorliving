@@ -333,12 +333,12 @@
                            "assets/products/chairs/Mega High Back/Mega High back (8).jpg"
                        ],
     "APPLE BAR STOOL":  [
-                            "assets/products/chairs/APPLE BAR STOOL/21pfcktioVS.jpg",
-                            "assets/products/chairs/APPLE BAR STOOL/310bswAKeiS.jpg",
-                            "assets/products/chairs/APPLE BAR STOOL/317MilhS9wS.jpg",
-                            "assets/products/chairs/APPLE BAR STOOL/41tP0jtpb7L.jpg",
-                            "assets/products/chairs/APPLE BAR STOOL/515dDrVZlGL._SL1200_.jpg",
-                            "assets/products/chairs/APPLE BAR STOOL/51b6NFGLvCS._SL1000_.jpg"
+                            "assets/products/chairs/Baby Chair/APPLE BAR STOOL/21pfcktioVS.jpg",
+                            "assets/products/chairs/Baby Chair/APPLE BAR STOOL/310bswAKeiS.jpg",
+                            "assets/products/chairs/Baby Chair/APPLE BAR STOOL/317MilhS9wS.jpg",
+                            "assets/products/chairs/Baby Chair/APPLE BAR STOOL/41tP0jtpb7L.jpg",
+                            "assets/products/chairs/Baby Chair/APPLE BAR STOOL/515dDrVZlGL._SL1200_.jpg",
+                            "assets/products/chairs/Baby Chair/APPLE BAR STOOL/51b6NFGLvCS._SL1000_.jpg"
                         ],
     "Garlic Chair":  [
                          "assets/products/chairs/Garlic Chair/Garlic Chair (1).jpg",
