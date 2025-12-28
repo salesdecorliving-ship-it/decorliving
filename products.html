@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Decor Living Office Furniture</title>
+    <meta name="description"
+        content="Explore our range of premium ergonomic office chairs, workstations, and office supplies.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Product Specific Styles */
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 100px 0 40px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: var(--white);
+        }
+
+        .products-section {
+            padding: 4rem 0;
+            background-color: var(--bg-color);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .product-image {
+            height: 300px;
+            overflow: hidden;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-desc {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .product-features {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-features span {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Decor Living</div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="products.html" class="active" style="color: var(--accent-gold);">Products</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Premium Office Furniture for Modern Workspaces</p>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Product 1: Chair -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/product-chair.png" alt="Ergonomic Mesh Chair">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">ErgoPro Mesh Chair</h3>
+                        <p class="product-desc">Advanced ergonomic executive chair with breathable mesh back and
+                            adjustable lumbar support. Ideal for long working hours.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-check"></i> High Back</span>
+                            <span><i class="fas fa-check"></i> Synchro-tilt</span>
+                            <span><i class="fas fa-check"></i> 3D Armrest</span>
+                        </div>
+                        <a href="index.html#contact" class="btn btn-primary" style="text-align: center;">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Desk -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/product-desk.png" alt="L-Shaped Workstation">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Nexus L-Shaped Desk</h3>
+                        <p class="product-desc">Modern minimalist workstation with wooden finish and white powder-coated
+                            legs. Perfect for executive cabins.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-check"></i> Premium Finish</span>
+                            <span><i class="fas fa-check"></i> Cable Management</span>
+                            <span><i class="fas fa-check"></i> Modular</span>
+                        </div>
+                        <a href="index.html#contact" class="btn btn-primary" style="text-align: center;">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- More placeholders for visual balance -->
+                <!-- Product 3: Chair Variant -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-chair" style="font-size: 5rem; color: #ddd;"></i>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Visitor Chair Classic</h3>
+                        <p class="product-desc">Comfortable cantilever visitor chair with cushioned seat and back.
+                            Durable and stylish for reception areas.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-check"></i> Stackable</span>
+                            <span><i class="fas fa-check"></i> Fabric Upholstery</span>
+                        </div>
+                        <a href="index.html#contact" class="btn btn-primary" style="text-align: center;">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Storage -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-archive" style="font-size: 5rem; color: #ddd;"></i>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Mobile Pedestal</h3>
+                        <p class="product-desc">3-drawer steel mobile pedestal with central locking system. Smooth
+                            castors for easy mobility.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-check"></i> Steel Body</span>
+                            <span><i class="fas fa-check"></i> Key Lock</span>
+                        </div>
+                        <a href="index.html#contact" class="btn btn-primary" style="text-align: center;">Enquire Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Decor Living. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
