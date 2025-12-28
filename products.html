@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Decor Living Office Furniture</title>
-    <meta name="description"
-        content="Explore our range of premium ergonomic office chairs, workstations, and office supplies.">
+    <title>Chairs Collection - Decor Living</title>
+    <meta name="description" content="Explore our extensive range of office chairs. Multiple angles available.">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +17,6 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Product Specific Styles */
         .page-header {
             background-color: var(--primary-color);
             color: var(--white);
@@ -37,7 +35,7 @@
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 2rem;
         }
 
@@ -49,6 +47,7 @@
             transition: var(--transition);
             display: flex;
             flex-direction: column;
+            position: relative;
         }
 
         .product-card:hover {
@@ -56,60 +55,73 @@
             box-shadow: var(--shadow-lg);
         }
 
-        .product-image {
-            height: 300px;
-            overflow: hidden;
+        /* Carousel Styles */
+        .product-carousel {
+            height: 350px;
+            position: relative;
             background-color: #fff;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .product-image img {
-            width: 100%;
-            height: 100%;
+        .carousel-slide img {
+            width: 90%;
+            height: 90%;
             object-fit: contain;
-            transition: var(--transition);
         }
 
-        .product-card:hover .product-image img {
-            transform: scale(1.05);
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .product-card:hover .carousel-btn {
+            opacity: 1;
+        }
+
+        .carousel-btn.prev {
+            left: 10px;
+        }
+
+        .carousel-btn.next {
+            right: 10px;
         }
 
         .product-details {
             padding: 1.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
+            text-align: center;
         }
 
         .product-title {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: var(--primary-color);
             margin-bottom: 0.5rem;
-        }
-
-        .product-desc {
-            color: #666;
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            flex-grow: 1;
-        }
-
-        .product-features {
-            font-size: 0.85rem;
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-
-        .product-features span {
-            display: inline-block;
-            background: #f0f0f0;
-            padding: 4px 8px;
-            border-radius: 4px;
-            margin-right: 5px;
-            margin-bottom: 5px;
+            text-transform: capitalize;
         }
     </style>
 </head>
@@ -135,86 +147,16 @@
     <!-- Page Header -->
     <div class="page-header">
         <div class="container">
-            <h1>Our Products</h1>
-            <p>Premium Office Furniture for Modern Workspaces</p>
+            <h1>Our Chairs Collection</h1>
+            <p>Ergonomic | Stylish | Durable</p>
         </div>
     </div>
 
     <!-- Products Section -->
     <section class="products-section">
         <div class="container">
-            <div class="product-grid">
-                <!-- Product 1: Chair -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/product-chair.png" alt="Ergonomic Mesh Chair">
-                    </div>
-                    <div class="product-details">
-                        <h3 class="product-title">ErgoPro Mesh Chair</h3>
-                        <p class="product-desc">Advanced ergonomic executive chair with breathable mesh back and
-                            adjustable lumbar support. Ideal for long working hours.</p>
-                        <div class="product-features">
-                            <span><i class="fas fa-check"></i> High Back</span>
-                            <span><i class="fas fa-check"></i> Synchro-tilt</span>
-                            <span><i class="fas fa-check"></i> 3D Armrest</span>
-                        </div>
-                        <a href="index.html#contact" class="btn btn-primary" style="text-align: center;">Enquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Product 2: Desk -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/product-desk.png" alt="L-Shaped Workstation">
-                    </div>
-                    <div class="product-details">
-                        <h3 class="product-title">Nexus L-Shaped Desk</h3>
-                        <p class="product-desc">Modern minimalist workstation with wooden finish and white powder-coated
-                            legs. Perfect for executive cabins.</p>
-                        <div class="product-features">
-                            <span><i class="fas fa-check"></i> Premium Finish</span>
-                            <span><i class="fas fa-check"></i> Cable Management</span>
-                            <span><i class="fas fa-check"></i> Modular</span>
-                        </div>
-                        <a href="index.html#contact" class="btn btn-primary" style="text-align: center;">Enquire Now</a>
-                    </div>
-                </div>
-
-                <!-- More placeholders for visual balance -->
-                <!-- Product 3: Chair Variant -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-chair" style="font-size: 5rem; color: #ddd;"></i>
-                    </div>
-                    <div class="product-details">
-                        <h3 class="product-title">Visitor Chair Classic</h3>
-                        <p class="product-desc">Comfortable cantilever visitor chair with cushioned seat and back.
-                            Durable and stylish for reception areas.</p>
-                        <div class="product-features">
-                            <span><i class="fas fa-check"></i> Stackable</span>
-                            <span><i class="fas fa-check"></i> Fabric Upholstery</span>
-                        </div>
-                        <a href="index.html#contact" class="btn btn-primary" style="text-align: center;">Enquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Product 4: Storage -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-archive" style="font-size: 5rem; color: #ddd;"></i>
-                    </div>
-                    <div class="product-details">
-                        <h3 class="product-title">Mobile Pedestal</h3>
-                        <p class="product-desc">3-drawer steel mobile pedestal with central locking system. Smooth
-                            castors for easy mobility.</p>
-                        <div class="product-features">
-                            <span><i class="fas fa-check"></i> Steel Body</span>
-                            <span><i class="fas fa-check"></i> Key Lock</span>
-                        </div>
-                        <a href="index.html#contact" class="btn btn-primary" style="text-align: center;">Enquire Now</a>
-                    </div>
-                </div>
-
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded here dynamically via JS -->
             </div>
         </div>
     </section>
@@ -225,6 +167,83 @@
         </div>
     </footer>
 
+    <script>
+        // List of products folders based on the directory scan
+        // Note: In a real app this would come from a backend/API, but we are static here so I'm hardcoding the list found.
+        const products = [
+            "Baby Chair", "Bell", "BLAZE VISITOR", "Boom Medium back",
+            "Butterfly HB", "ButterFly MB", "Checks Bar Stool", "Checks Chair LB Brown",
+            "Checks HB Chair", "Delta Brown HB", "Dino High Back", "Dino Medium Back",
+            "Garlic Chair", "GOLF HIGH BACK", "GOLF MB", "Maxi HB Chair",
+            "Maxi MB Chair", "MC-Q Chair", "Mega High Back", "Miller High Back",
+            "Mono Office Chair", "Novella", "Numero HB Chair", "Plastic stool",
+            "Platic Chair Round", "Platic Chair Square", "Pufi", "Renger HB Chair",
+            "Shoes Rack 2 Door", "Shoes Rack 3 Door", "SIGMA CHAIR LB", "sigmChair Grey",
+            "Venna Chair", "Venna Chair Black", "Wooden Bed Dark Chocolate"
+        ];
+
+        // For simplicity in this static environment without server-side file listing at runtime,
+        // we will assume each product has at least 1-3 images named similarly or just check commonly found ones.
+        // HOWEVER, since I can't check file counts per folder in client-side JS without a server index,
+        // I will write a small script during the build (now) to generate this JSON accurately or just assume a standard pattern.
+        // Let's assume there are images in each folder. The user said "multiple angle images".
+        // I will generate the HTML to look for random images or I strictly need to know the image filenames.
+        // Strategy: I will assume all images in the folder are relevant. 
+        // Since I can't "glob" in client-side JS on file:// protocol seamlessly without a manifest,
+        // I'll create a simple manifest object below based on what I just copied.
+
+        // Actually, to be safe and robust:
+        // I'll just render the folders I know. For the images, I will try to load standard names or
+        // since I cannot know the filenames 100% without listing them recursively again to a JSON file.
+        // Let's do that in a follow-up step. For now, I will put a placeholder logic that attempts to load index 1 to 5.
+
+        const productGrid = document.getElementById('productGrid');
+
+        products.forEach(productName => {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+
+            // Initial HTML structure
+            card.innerHTML = `
+                <div class="product-carousel" id="carousel-${productName.replace(/\s/g, '')}">
+                    <div class="carousel-track" id="track-${productName.replace(/\s/g, '')}">
+                        <!-- Images injected here -->
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide('${productName.replace(/\s/g, '')}', -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveSlide('${productName.replace(/\s/g, '')}', 1)">&#10095;</button>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">${productName}</h3>
+                    <a href="index.html#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Enquire</a>
+                </div>
+            `;
+            productGrid.appendChild(card);
+
+            // Attempt to load images (Simulated check, or we need the real list)
+            // Real solution: I will create a manifest.json file in the next step containing all image paths
+            // and fetch it here. For now, let's assume this structure is ready to receive that logic.
+        });
+
+        // Placeholder slider logic
+        window.moveSlide = function (id, direction) {
+            const track = document.getElementById('track-' + id);
+            if (!track) return;
+            const slides = track.children;
+            if (slides.length === 0) return;
+
+            let currentIdx = parseInt(track.dataset.currentIdx || 0);
+            let newIdx = currentIdx + direction;
+
+            if (newIdx < 0) newIdx = slides.length - 1;
+            if (newIdx >= slides.length) newIdx = 0;
+
+            track.style.transform = `translateX(-${newIdx * 100}%)`;
+            track.dataset.currentIdx = newIdx;
+        }
+
+    </script>
+    <script src="js/products-data.js"></script>
+    <script src="js/load-products.js"></script>
 </body>
 
 </html>
