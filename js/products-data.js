@@ -7,7 +7,6 @@
                                  "assets/products/chairs/Aron High Back Chair/Aron High Back (5).jpg"
                              ],
     "Dino High Back":  [
-                           "assets/products/chairs/Dino High Back/Dino HB.pptx",
                            "assets/products/chairs/Dino High Back/Picture1.png",
                            "assets/products/chairs/Dino High Back/Picture2.png",
                            "assets/products/chairs/Dino High Back/Picture3.png",
@@ -27,7 +26,6 @@
                                   "assets/products/chairs/Checks Chair LB Brown/Checks LB Brown (8).jpg"
                               ],
     "GOLF HIGH BACK":  [
-                           "assets/products/chairs/GOLF HIGH BACK/Golf HIGH BACK.pptx",
                            "assets/products/chairs/GOLF HIGH BACK/Picture1.png",
                            "assets/products/chairs/GOLF HIGH BACK/Picture2.png",
                            "assets/products/chairs/GOLF HIGH BACK/Picture3.png",
@@ -51,7 +49,6 @@
                             "assets/products/chairs/Renger HB Chair/Renger HB Chair ..jpg"
                         ],
     "ButterFly MB":  [
-                         "assets/products/chairs/ButterFly MB/ButterFly LB.pptx",
                          "assets/products/chairs/ButterFly MB/Picture1.png",
                          "assets/products/chairs/ButterFly MB/Picture2.png",
                          "assets/products/chairs/ButterFly MB/Picture3.png",
@@ -59,7 +56,6 @@
                          "assets/products/chairs/ButterFly MB/Picture5.png"
                      ],
     "GOLF MB":  [
-                    "assets/products/chairs/GOLF MB/GOLF MB.pptx",
                     "assets/products/chairs/GOLF MB/Picture1.png",
                     "assets/products/chairs/GOLF MB/Picture2.png",
                     "assets/products/chairs/GOLF MB/Picture3.png",
@@ -68,7 +64,6 @@
                     "assets/products/chairs/GOLF MB/Picture6.png"
                 ],
     "Maxi HB Chair":  [
-                          "assets/products/chairs/Maxi HB Chair/New Microsoft Office PowerPoint Presentation.pptx",
                           "assets/products/chairs/Maxi HB Chair/Picture1.png",
                           "assets/products/chairs/Maxi HB Chair/Picture2.png",
                           "assets/products/chairs/Maxi HB Chair/Picture3.png",
@@ -105,7 +100,6 @@
                               "assets/products/chairs/Shoes Rack 2 Door/WhatsApp Image 2022-04-03 at 2.05.33 PM.jpeg"
                           ],
     "Venna Chair":  [
-                        "assets/products/chairs/Venna Chair/NEHA MUKESH WARNWAL GST.pdf",
                         "assets/products/chairs/Venna Chair/Venna Chair (1).jpeg",
                         "assets/products/chairs/Venna Chair/Venna Chair (2).jpeg",
                         "assets/products/chairs/Venna Chair/Venna Chair (3).jpeg",
@@ -132,7 +126,6 @@
                               "assets/products/chairs/Venna Chair Black/Veena Black (5).jpg"
                           ],
     "Plastic stool":  [
-                          "assets/products/chairs/Plastic stool/New Microsoft Office PowerPoint Presentation.pptx",
                           "assets/products/chairs/Plastic stool/Picture1.png",
                           "assets/products/chairs/Plastic stool/Picture2.png",
                           "assets/products/chairs/Plastic stool/Picture3.png",
@@ -175,7 +168,6 @@
                        "assets/products/chairs/Baby Chair/baby_Chair___2_-removebg-preview.png",
                        "assets/products/chairs/Baby Chair/baby_Chair___3_-removebg-preview.png",
                        "assets/products/chairs/Baby Chair/baby_Chair___4_-removebg-preview.png",
-                       "assets/products/chairs/Baby Chair/New Microsoft Office PowerPoint Presentation.pptx",
                        "assets/products/chairs/Baby Chair/Picture 20..png",
                        "assets/products/chairs/Baby Chair/Picture 55.png",
                        "assets/products/chairs/Baby Chair/Picture 9.png",
@@ -211,7 +203,6 @@
                     "assets/products/chairs/Novella/Novella (6).jpg"
                 ],
     "Dino Medium Back":  [
-                             "assets/products/chairs/Dino Medium Back/Dino MB Chair.pptx",
                              "assets/products/chairs/Dino Medium Back/Picture1.png",
                              "assets/products/chairs/Dino Medium Back/Picture2.png",
                              "assets/products/chairs/Dino Medium Back/Picture3.png",
@@ -229,7 +220,6 @@
                          "assets/products/chairs/Butterfly HB/Butterfly HB (6).jpg",
                          "assets/products/chairs/Butterfly HB/Butterfly HB (7).jpg",
                          "assets/products/chairs/Butterfly HB/Butterfly HB.png",
-                         "assets/products/chairs/Butterfly HB/ButterFly HB.pptx",
                          "assets/products/chairs/Butterfly HB/HB 1.png",
                          "assets/products/chairs/Butterfly HB/HB 2.png",
                          "assets/products/chairs/Butterfly HB/HB Back.png"
@@ -251,10 +241,10 @@
                               "assets/products/chairs/Shoes Rack 3 Door/Shoes Rack (8).jpeg"
                           ],
     "802":  [
-                "assets/products/chairs/802/Picture1.png",
                 "assets/products/chairs/802/Picture2.png",
                 "assets/products/chairs/802/Picture3.png",
-                "assets/products/chairs/802/Picture4.png"
+                "assets/products/chairs/802/Picture4.png",
+                "assets/products/chairs/802/Picture1.png"
             ],
     "Wooden Bed Dark Chocolate":  [
                                       "assets/products/chairs/Wooden Bed Dark Chocolate/24f0b3b7-5cde-4687-af43-9eeb07469827.jpg",
@@ -268,8 +258,7 @@
                            "assets/products/chairs/sigmChair Grey/Sigma grey (3).jpg",
                            "assets/products/chairs/sigmChair Grey/Sigma grey (4).jpg",
                            "assets/products/chairs/sigmChair Grey/Sigma grey (5).jpg",
-                           "assets/products/chairs/sigmChair Grey/Sigma grey (6).jpg",
-                           "assets/products/chairs/sigmChair Grey/S_listing--ui--group_2ca285994c3743f1_1404-160129_default.xls"
+                           "assets/products/chairs/sigmChair Grey/Sigma grey (6).jpg"
                        ],
     "Bell":  [
                  "assets/products/chairs/Bell/31dHPT5Dl6L.jpg",
@@ -282,7 +271,6 @@
              ],
     "Platic Chair Round":  [
                                "assets/products/chairs/Platic Chair Round/83.png",
-                               "assets/products/chairs/Platic Chair Round/New Microsoft Office PowerPoint Presentation.pptx",
                                "assets/products/chairs/Platic Chair Round/Picture1.png",
                                "assets/products/chairs/Platic Chair Round/Picture2.png",
                                "assets/products/chairs/Platic Chair Round/Picture3.png",
@@ -306,7 +294,6 @@
                                "assets/products/chairs/Platic Chair Round/WhatsApp_Image_2022-04-10_at_1.57.23_PM__1_-removebg-preview.png"
                            ],
     "Platic Chair Square":  [
-                                "assets/products/chairs/Platic Chair Square/New Microsoft Office PowerPoint Presentation.pptx",
                                 "assets/products/chairs/Platic Chair Square/Picture2.png",
                                 "assets/products/chairs/Platic Chair Square/Picture3.png",
                                 "assets/products/chairs/Platic Chair Square/Square Plastic Chair  (1).jpg",
@@ -319,7 +306,6 @@
                                 "assets/products/chairs/Platic Chair Square/Square Plastic Chair  (8).jpg"
                             ],
     "Mono Office Chair":  [
-                              "assets/products/chairs/Mono Office Chair/New Microsoft Office PowerPoint Presentation.pptx",
                               "assets/products/chairs/Mono Office Chair/Picture1.png",
                               "assets/products/chairs/Mono Office Chair/Picture2.png",
                               "assets/products/chairs/Mono Office Chair/Picture3.png",
