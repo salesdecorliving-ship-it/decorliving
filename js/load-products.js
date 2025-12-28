@@ -41,7 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="product-details">
                 <h3 class="product-title">${displayName}</h3>
                  <p style="font-size: 0.8rem; color: #777; margin-bottom: 10px;">${images.length} Images</p>
-                <a href="index.html#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Enquire</a>
+                <a href="https://wa.me/919967961880?text=Hi, I am interested in ${encodeURIComponent(displayName)}" target="_blank" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem; background-color: #25D366; color: white; border: none;">
+                    <i class="fab fa-whatsapp" style="margin-right: 5px;"></i> WhatsApp
+                </a>
             </div>
         `;
         grid.appendChild(card);
