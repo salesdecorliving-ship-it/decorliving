@@ -102,8 +102,8 @@ nav {
 }
 
 .logo img {
-    height: 30px;
-    /* Reduced by 50% as requested */
+    height: 45px;
+    /* Increased by 50% */
     width: auto;
     object-fit: contain;
 }
