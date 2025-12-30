@@ -90,10 +90,15 @@ nav {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-family: var(--font-heading);
-    font-weight: 700;
-    color: var(--primary-color);
+    /* Font styles removed as we are using an image now */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px; /* Adjust height as needed to fit header */
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
