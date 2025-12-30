@@ -12,7 +12,38 @@ document.addEventListener('DOMContentLoaded', () => {
     // Clear existing content
     grid.innerHTML = '';
 
-    productNames.forEach(name => {
+    // Category Map logic
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+
+    // Update Page Header Title
+    const headerTitle = document.querySelector('.page-header h1');
+    if (category && headerTitle) {
+        headerTitle.textContent = category;
+    }
+
+    let displayedProducts = productNames;
+
+    if (category) {
+        const lowerCat = category.toLowerCase();
+        displayedProducts = productNames.filter(name => {
+            const lowerName = name.toLowerCase();
+            if (lowerCat === 'seating') {
+                return lowerName.includes('chair') || lowerName.includes('stool') || lowerName.includes('sofa') || lowerName.includes('bell') || lowerName.includes('mono') || lowerName.includes('blaze') || lowerName.includes('visit') || lowerName.includes('seat');
+            } else if (lowerCat === 'desk') {
+                return lowerName.includes('desk') || lowerName.includes('table');
+            } else if (lowerCat === 'work stations') {
+                return lowerName.includes('work') || lowerName.includes('station');
+            } else if (lowerCat === 'cabinets') {
+                return lowerName.includes('rack') || lowerName.includes('cabinet') || lowerName.includes('cupboard') || lowerName.includes('storage') || lowerName.includes('shelf');
+            } else if (lowerCat === 'school furniture') {
+                return lowerName.includes('school') || lowerName.includes('bench') || lowerName.includes('student') || lowerName.includes('baby');
+            }
+            return true;
+        });
+    }
+
+    displayedProducts.forEach(name => {
         const displayName = name;
         const safeName = name.replace(/[^a-zA-Z0-9]/g, '');
         const images = data[name];

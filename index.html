@@ -33,7 +33,16 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li class="dropdown">
+                        <a href="products.html">Products <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="products.html?category=Seating">Seating</a></li>
+                            <li><a href="products.html?category=Desk">Desk</a></li>
+                            <li><a href="products.html?category=Work%20Stations">Work Stations</a></li>
+                            <li><a href="products.html?category=Cabinets">Cabinets</a></li>
+                            <li><a href="products.html?category=School%20Furniture">School Furniture</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -47,12 +56,56 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Modern Office Furniture Solutions</h1>
-            <p>Premium ergonomic chairs, workstations, and office supplies. We manufacture and supply high-quality
-                furniture for your workspace in Mira Road.</p>
-            <a href="#contact" class="btn btn-primary">Get a Consultation</a>
+    <!-- Hero Slider -->
+    <section id="home" class="hero-slider">
+        <!-- Slide 1: Office Chairs -->
+        <div class="slide active" style="background-image: url('assets/slider/banner-chairs.png');">
+            <div class="hero-content">
+                <h1>Premium Office Chairs</h1>
+                <p>Ergonomic designs for maximum comfort and productivity.</p>
+                <a href="products.html?category=Seating" class="btn btn-primary">Explore Chairs</a>
+            </div>
+        </div>
+        <!-- Slide 2: Desk -->
+        <div class="slide" style="background-image: url('assets/slider/banner-desk.png');">
+            <div class="hero-content">
+                <h1>Modern Executive Desks</h1>
+                <p>Sleek and functional desks for your workspace.</p>
+                <a href="products.html?category=Desk" class="btn btn-primary">View Desks</a>
+            </div>
+        </div>
+        <!-- Slide 3: Work Stations -->
+        <div class="slide" style="background-image: url('assets/slider/banner-workstations.png');">
+            <div class="hero-content">
+                <h1>Collaborative Work Stations</h1>
+                <p>Modular systems designed for teamwork and efficiency.</p>
+                <a href="products.html?category=Work%20Stations" class="btn btn-primary">Discover Workstations</a>
+            </div>
+        </div>
+        <!-- Slide 4: Metal Cabinets -->
+        <div class="slide" style="background-image: url('assets/slider/banner-cabinets.png');">
+            <div class="hero-content">
+                <h1>Durable Metal Cabinets</h1>
+                <p>Secure and organized storage solutions for your office.</p>
+                <a href="products.html?category=Cabinets" class="btn btn-primary">Shop Cabinets</a>
+            </div>
+        </div>
+        <!-- Slide 5: School Furniture -->
+        <div class="slide" style="background-image: url('assets/slider/banner-school.png');">
+            <div class="hero-content">
+                <h1>Quality School Furniture</h1>
+                <p>Comfortable and durable furniture for educational institutions.</p>
+                <a href="products.html?category=School%20Furniture" class="btn btn-primary">School Solutions</a>
+            </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="slider-nav">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
         </div>
     </section>
 
@@ -226,6 +279,7 @@
     </footer>
 
     <script src="js/mobile-nav.js"></script>
+    <script src="js/home-slider.js"></script>
 </body>
 
 </html>
