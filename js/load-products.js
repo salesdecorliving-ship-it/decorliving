@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    let foundProductToScroll = null;
+
     displayedProducts.forEach(name => {
         const displayName = name;
         const safeName = name.replace(/[^a-zA-Z0-9]/g, '');
@@ -52,12 +54,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const card = document.createElement('div');
         card.className = 'product-card';
+        card.id = `product-${safeName}`; // Add ID for deep linking
 
         let slidesHtml = '';
         images.forEach(imgSrc => {
             const webPath = imgSrc.replace(/\\/g, '/');
             slidesHtml += `<div class="carousel-slide"><img src="${webPath}" loading="lazy" alt="${displayName}"></div>`;
         });
+
+        // Construct Deep Link
+        const productUrl = `${window.location.origin}${window.location.pathname}?product=${encodeURIComponent(name)}`;
+        const imageUrl = `${window.location.origin}/${images[0].replace(/\\/g, '/')}`;
+
+        // Revised Message Format: Product Page Link + Image URL for preview
+        const waText = `Check out ${displayName}: ${productUrl}\n\nImage: ${imageUrl}`;
 
         card.innerHTML = `
             <div class="product-carousel">
@@ -72,11 +82,27 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="product-details">
                 <h3 class="product-title">${displayName}</h3>
                  <p style="font-size: 0.8rem; color: #777; margin-bottom: 10px;">${images.length} Images</p>
-                <a href="https://wa.me/919967961880?text=Hi, I am interested in ${encodeURIComponent(displayName)}. Check out this image: ${encodeURIComponent(window.location.origin + '/' + images[0].replace(/\\/g, '/'))}" target="_blank" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem; background-color: #25D366; color: white; border: none;">
+                <a href="https://wa.me/919967961880?text=${encodeURIComponent(waText)}" target="_blank" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem; background-color: #25D366; color: white; border: none;">
                     <i class="fab fa-whatsapp" style="margin-right: 5px;"></i> WhatsApp
                 </a>
             </div>
         `;
         grid.appendChild(card);
+
+        // Check/Set deep link target
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('product') === name) {
+            foundProductToScroll = card;
+        }
     });
+
+    // Handle Deep Link Scroll
+    if (foundProductToScroll) {
+        setTimeout(() => {
+            foundProductToScroll.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            foundProductToScroll.style.border = "2px solid var(--primary-color)";
+            foundProductToScroll.style.transition = "border 0.5s";
+            setTimeout(() => { foundProductToScroll.style.border = "none"; }, 3000);
+        }, 500);
+    }
 });
