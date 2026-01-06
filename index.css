@@ -447,6 +447,68 @@ section {
     margin-bottom: 1rem;
 }
 
+/* AMC Pricing */
+.pricing-section {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.pricing-card {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-gold);
+}
+
+.pricing-header h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.pricing-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.pricing-price span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #777;
+}
+
+.pricing-card .btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    background-color: #25D366;
+    /* WhatsApp Green */
+}
+
+.pricing-card .btn-primary:hover {
+    background-color: #128c7e;
+}
+
 /* Gallery / Portfolio */
 .gallery {
     padding: 0;
